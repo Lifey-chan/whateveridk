@@ -1,0 +1,23 @@
+function nastepnakarta1(){
+    document.getElementById('form1').style.opacity="0";
+    document.getElementById('form2').style.opacity="1";
+}
+
+function nastepnakarta2(){
+    document.getElementById('form2').style.opacity="0";
+    document.getElementById('form3').style.opacity="1";
+}
+function zatwierdz(){
+    let haslo = document.getElementById('haslo').value
+    let powtorzhaslo = document.getElementById('powtorzhaslo').value
+    if (haslo!=powtorzhaslo) {
+        alert("Podane hasła różnią się")
+    }
+    else{
+        alert("witaj")
+    }
+    let imie = document.getElementById('imie').value
+let nazwisko = document.getElementById('nazwisko').value
+
+    console.log("Witaj "+imie+" "+nazwisko)
+}
